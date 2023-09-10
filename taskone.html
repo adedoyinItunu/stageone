@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <h1>Frontend Task</h1>
+
+    <!-- Slack Name -->
+    <p class="slack-username" data-testid="slackUserName">Name:ITUNU ADEDOYIN</p>
+
+    <!-- Slack Display Picture -->
+    <img src="photo_2023-07-15_16-08-58 (2).jpg" alt="ADEDOYIN" class="slack-image" data-testid="slackDisplayImage">
+
+    <!-- Current Day of the Week -->
+    <p class="current-day" data-testid="currentDayOfTheWeek"></p>
+
+    <!-- Current UTC Time -->
+    <p class="current-utc-time" data-testid="currentUTCTime"></p>
+
+    <!-- Track -->
+    <p  track class="track" data-testid="myTrack">track: Frontend</p>
+
+    <!-- GitHub URL -->
+    <p>
+        GitHub URL: 
+        <a href="https://github.com/adedoyinItunu/stageone" data-testid="githubURL"> GitHub Repository</a>
+    </p>
+
+    <script>
+      
+        function getCurrentDay() {
+            const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const currentDate = new Date();
+            const currentDay = daysOfWeek[currentDate.getUTCDay()];
+            return currentDay;
+        }
+
+        function getCurrentUTCTime() {
+            const currentDate = new Date();
+            const utcTime = currentDate.toUTCString();
+            return utcTime;
+        }
+
+
+        document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = `Current Day of the Week: ${getCurrentDay()}`;
+        document.querySelector('[data-testid="currentUTCTime"]').textContent = `Current UTC Time: ${getCurrentUTCTime()}`;
+    </script>
+
+</body>
+</html>
