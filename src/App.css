@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-radius;
+  margin: 0;
+}
+.App {
+  text-align: center;
+  background-color: yellowgreen;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  color: wheat;
+  background: chocolate;
+}
+.navLinks {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+.link {
+  list-style: none;
+  text-decoration: none;
+  color: wheat;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.show1 {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+}
+.tags {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: space-around;
+  height: 300px;
+  width: 30%;
+  background-color: wheat;
+  border-radius: 15px;
+}
+.imgslide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.slideimg {
+  height: 300px;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.homepage {
+  background-color: rgb(212, 112, 10);
+}
+.showcase {
+  display: flex;
+  overflow: hidden;
+  gap: 7px;
+  color: wheat;
+}
+.homeButton {
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid grey;
+}
+.homeContainer {
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+}
+.containerShowcase {
+  border-radius: 3px;
+}
+.search {
+  display: flex;
+}
+.catalog {
+  color: wheat;
+}
+.catalogText:hover {
+  color: black;
+}
+.shopContainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: wheat;
+}
+.shopCase {
+  display: flex;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.shopcard {
+  background-color: wheat;
+  border: 3px solid orange;
+  border-radius: 25px;
+  margin: 5px;
+}
+.shopHeader {
+  background-color: red;
+  color: white;
+}
+.shopSeeAll {
+  text-align: end;
+  position: relative;
+  left: 40%;
+}
+.shopTopic {
+  background-color: wheat;
+}
+.shopTopic > h4 {
+  position: relative;
+  top: 5px;
+}
+.amount {
+  border-radius: 5px;
+  border: 2px solid green;
+}
+.buy {
+  border-radius: 5px;
+  border: 2px solid gray;
+}
